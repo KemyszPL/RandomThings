@@ -10,7 +10,6 @@ print("2. 8ball")
 print("3. Flip a coin")
 
 usrinput = input("? ")
-while True:
     #Gay Rating
     if usrinput == "1":
         usrinput = input("What do you want to rate? ")
