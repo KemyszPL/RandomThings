@@ -13,7 +13,7 @@ print("5. Ask Trump")
 
 #the lists
 ball8 = ['Yes', 'No', 'Hell naw', 'Doubtful...', 'Sure', 'Absolutely', 'You already know the answer to that...', 'I don`t know, m8', 'Yes, definitely! :D', 'YES YES YES!', 'Nope', 'Most likely!', 'In your dreams!', 'If that`s what you want...', 'Oh God, no.'] #ball8 since i don't think python likes numbers at the begginning of names
-asktrump = ['PRESIDENT', 'MELANIA']
+asktrump = ['PRESIDENT', 'MELANIA', 'OIL', 'MIKE PENCE', 'BUSH', 'PEDOPHILE', 'HOMOSEXUAL', 'REAL', 'IRAN','THE BEST', 'AFGHANISTAN', 'MESS', 'FAKE MEDIA', 'PUTIN', 'ALIENS', 'RIGGED', 'DOING POORLY']
 
 usrinput = input("? ")
 
