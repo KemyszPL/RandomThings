@@ -2,64 +2,54 @@ import random
 
 
 print("Welcome to Random Stuff™️!")
-print("Version BETA 6 hotfix")
+print("Version BETA 8")
 print("")
 print("Currently avilable Random Stuff™️:")
 print("1. Gay Rating")
 print("2. 8ball")
 print("3. Flip a coin")
+print("4. Random insult (very work in progress)")
+print("5. Ask Trump")
+
+#the lists
+ball8 = ['Yes', 'No', 'Hell naw', 'Doubtful...', 'Sure', 'Absolutely', 'You already know the answer to that...', 'I don`t know, m8', 'Yes, definitely! :D', 'YES YES YES!', 'Nope', 'Most likely!', 'In your dreams!', 'If that`s what you want...', 'Oh God, no.'] #ball8 since i don't think python likes numbers at the begginning of names
+asktrump = ['PRESIDENT', 'MELANIA']
 
 usrinput = input("? ")
-    #Gay Rating
-    if usrinput == "1":
-        usrinput = input("What do you want to rate? ")
-        num = str(random.randint(1,2)) #Two levels for more randomization
-        if num == "2": #Reversed for higher results because the rng does not like to rng
-            num = str(random.randint(1,50))
-            out = (usrinput + " is " + num + "% gay")
-            print(out)
-        elif num == "1":
-            num = str(random.randint(50,100))
-            out = (usrinput + " is " + num + "% gay")
-            print(out)
-    #8ball
-    if usrinput == "2":
-        usrinput = input("What do you want to ask? ")
-        num = str(random.randint(1,15))
-        if num == "1": #Randomizing the answer
-            print("Yes")
-        elif num == "2":
-            print("No")
-        elif num == "3":
-            print("Hell naw")
-        elif num == "4":
-            print("Doubtful...")
-        elif num == "5":
-            print("Sure")
-        elif num == "6":
-            print("Absolutely")
-        elif num == "7":
-            print("You already know the answer to that...")
-        elif num == "8":
-            print("I don't know, m8")
-        elif num == "9":
-            print("Yes, definitely! :D")
-        elif num == "10":
-            print("YES YES YES!")
-        elif num == "11":
-            print("Nope")
-        elif num == "12":
-            print("Most likely!")
-        elif num == "13":
-            print("In your dreams!")
-        elif num == "14":
-            print("If that's what you want...")
-        elif num == "15":
-            print("Oh God, no.")
-    #Flipping a coin
-    if usrinput == "3":
-        num = str(random.randint(1,2))
-        if num == "1":
-            print("threw a coin: tails!")
-        elif num == "2":
-            print("threw a coin: heads!")
+
+#Gay Rating
+if usrinput == "1":
+    usrinput = input("What do you want to rate? ")
+    num = str(random.randint(1,2)) #Two levels for more randomization
+    if num == "2": #Reversed for higher results because the rng does not like to rng
+        num = str(random.randint(1,50))
+        out = (usrinput + " is " + num + "% gay")
+        print(out)
+    elif num == "1":
+        num = str(random.randint(50,100))
+        out = (usrinput + " is " + num + "% gay")
+        print(out)
+#8ball
+if usrinput == "2":
+    usrinput = input("What do you want to ask? ")
+    output = str(random.choice(ball8)) #NEW: Code was optimized a lot!
+    print(output)
+#Flipping a coin
+if usrinput == "3":
+    num = str(random.randint(1,2))
+    if num == "1":
+        print("threw a coin: tails!")
+    elif num == "2":
+        print("threw a coin: heads!")
+#Random insult
+if usrinput == "4": #remind me to finish this
+    num = str(random.randint(1,2))
+#Ask Trump
+if usrinput == "5":
+    usrinput = input("What do you want to ask Trump? ")
+    output1 = "You: " + usrinput
+    output2 = "Trump: " + random.choice(asktrump)
+    print(output1)
+    print("")
+    print("")
+    print(output2)
