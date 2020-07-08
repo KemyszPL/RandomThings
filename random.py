@@ -2,7 +2,7 @@ import random
 
 
 print("Welcome to Random Stuff™️!")
-print("Version BETA 8")
+print("Version BETA 11")
 print("")
 print("Currently avilable Random Stuff™️:")
 print("1. Gay Rating")
